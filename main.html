@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSolver | Event Dumper</title>
+</head>
+<body>
+    <h1>CSolver | Event Dumper</h1>
+    <p id='result'></p>
+    <script>
+        var script = document.createElement('script');
+        script.src = 'mod.js';
+        script.async = true;
+        script.defer = true;
+        script.onload = function() {
+            if (typeof hsw === 'function') {
+                hsw("eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJmIjowLCJzIjoyLCJ0IjoidyIsImQiOiJpd3N0QWhmV0VTcGgvV2JNdFdPM2VvaGJMNmpwU3Q5WWlTdGp1RUVZcFpVVUg0bHBZZkNEMDIySGJITkJIM2Eya1d4cHF3MnJEdDNDNWp1YmtnNFN1a3paTE1LWmtyY2JBdVRlbGpvQTd3MVo3UFdMeGVBSjV4RlQ3Z1MrY3ZhTEhkdlNGZk1KSFpiSHBLMHpZMjFrZ2owc3dORHFGSlJ6T0J4WVMrQm93Z1NSaUNVb0k0TFBBY3ZEa3FZb3pxQkREUjhkQmhxN08yUTlqaWl1WkF5bklERGVZbUQ5U0I2WVUwc2RDYm5ja01hQktwbTU2UUNnbDZXeFRrZU8yd2M9SHJlaVZ3a2E3cmJSeENhWSIsImwiOiIvYy82OTY3ZjM0NGI3YzRkYTRlYmVjYTBhMjMxZDgzNmY2MDVjOWZjZmYzMThkMzZlZTlmY2IzZDI4Yjk0MTAwMGQ3IiwiaSI6InNoYTI1Ni12NitRYnFsc0VrUUVMeHZHMzVGM3FBU21acmVIVWlnc1Y2bmY2YmNIeDNjPSIsImUiOjE3MjU1MDc3MTgsIm4iOiJoc3ciLCJjIjoxMDAwfQ.a7RveT2Ahxjez5YV1xxOCqZBM9Lw1oPNMMAq1Aaqkc4");
+            } else {
+                console.error('hsw function is not defined.');
+            }
+        };
+        document.head.appendChild(script);
+    </script>
+</body>
+</html>
