@@ -3565,6 +3565,7 @@ var hsw = function L$mfce() {
             "": A
         })))
     }
+    console.log("Events --> ", events)
     var yB, JB, LB = !1, sB = (yB = function(A, Q, B, I) {
         function C(A, Q, B) {
             var I = B ? WebAssembly.instantiateStreaming : WebAssembly.instantiate
